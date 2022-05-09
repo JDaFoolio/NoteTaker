@@ -1,3 +1,14 @@
 {
-    "notes": []
+  "notes": [
+    {
+      "title": "Mother's Day",
+      "text": "Get gift\nGet flowers\nGet dinner reservations",
+      "id": "1"
+    },
+    {
+      "title": "Chores",
+      "text": "Wash clothes\nVacuum \nClean the bathroom \nWipe the windows",
+      "id": "2"
+    }
+  ]
 }

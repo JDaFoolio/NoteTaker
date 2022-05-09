@@ -1,9 +1,19 @@
 {
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "JDaFoolio",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
-    "fs": "^0.0.1-security",
-    "note-taker": "^0.0.1",
-    "path": "^0.12.7",
-    "server": "^1.0.37"
+    "express": "^4.16.4",
+    "jest": "^28.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDaFoolio/NoteTaker.git"
   }
 }

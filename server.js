@@ -1,19 +1,19 @@
-// Dependencies
-const express = require("express");
-const fs = require("fs");
+const express = require('express');
+const fs = require('fs');
 const path = require('path');
+const notes = require('./db/db.json');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
-const app = express();
 const PORT = process.env.PORT || 3005;
-
-// Setup data parsing
+const app = express();
+// midleware
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 app.use(express.json());
-app.use(express.static(__dirname));
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
-require('./routes/apiroutes')(app);
-
-// Setup listener
-app.listen(PORT, function() {
-    console.log("App listening on PORT: " + PORT);
-});  
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`);
+})
