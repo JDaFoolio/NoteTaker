@@ -23,5 +23,5 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
-(./src/images/picture1.png)
-(./src/images/picture2.png)
+![Screenshot 2022-05-08 205145](https://user-images.githubusercontent.com/43555160/167325007-b4eb6529-09b4-4b4f-a3c4-04dead528a01.png)
+![Screenshot 2022-05-08 210144](https://user-images.githubusercontent.com/43555160/167325008-7cb4e628-b765-41ed-a88a-3e512013412a.png)
